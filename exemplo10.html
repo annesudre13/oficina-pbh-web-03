@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 03</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            height: 15rem;
+            border: 1px solid rgb(93, 172, 218);
+            box-shadow: .3rem .3rem .5rem .01rem rgb(237, 239, 240);
+            display: flex;
+
+        }
+
+        .bloco {
+            background-color: rgb(139, 193, 238);
+            color: rgb(13, 13, 14);
+            padding: 1rem;
+            margin: 1rem;
+            width: 7rem;
+            height: 3rem;
+            border-radius: 10%;
+        }
+
+        .par {
+            background-color: rgb(96, 179, 247);
+            color: rgb(235, 240, 243);
+            padding: 1rem;
+            margin: 1rem;
+            width: 7rem;
+            height: 3rem;
+            border-radius: 10%;
+        }
+        .impar {
+            background-color: rgb(96, 179, 247);
+            color: rgb(239, 244, 247);
+            padding: 1rem;
+            margin: 1rem;
+            width: 7rem;
+            height: 3rem;
+            border-radius: 10%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <script>
+        /*Estrtura sequencial:
+        Comandos de saída.
+        Declaração de variável.
+        Comando de entrada.
+        */
+       let num = parseInt(prompt("Informe a idade:")); 
+
+       if (num < 16) {
+            document.write(`<div class="par">A pessoa é menor de idade!</div>`);
+            document.write(`<div class="impar">A pessoa não pode votar!</div>`);
+       }
+            else {
+        document.write(`<div class="par">A pessoa é maior de idade!</div>`);
+        document.write(`<div class="impar">A pessoa pode votar!</div>`);
+     }
+    </script>
+    <div/>
+</body>
+</html>
